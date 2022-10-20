@@ -9,11 +9,27 @@
 9. Because i is defined with the let keyword in the for loop block, we are unable to save its contents after the for loop block ends, making i undefined after the loop.
 10. We will simply get 3, which is the length of the prices array. Nothing in the code changes the value of length between it's definitino and the line that prints it.
 11. We will be returned the proper array of discounted prices. This is because although the "discounted" array is declared with the const keyword, Javascript allows us to still update and remove values within the array (Javascript does however not allow total reassignment of the array variable "discounted"). Additionally, although the const keyword is used for the "discountedPrice" variable within the for loop, the variable is being completely redefined from scratch over each iteration of the loop, making the constant declaration valid. Finally, the for loop will work as intended, and return us [50, 100, 150], the final discounted prices from the prices array.
-12. [ANSWER]
-13. [ANSWER]
-14. [ANSWER]
-15. [ANSWER]
-16. [ANSWER]
-17. [ANSWER]
-18. [ANSWER]
-19. [ANSWER]
+12. a. student.name  
+    b. student['Grad Year']  
+    c. student.greeting()  
+    d. student['Favorite Teacher'].name  
+    e. student.courseLoad[0]  
+13. a. '32' because the adding sign treats the whole expression as a string concatenation. Therefore, 2 is converted to a string  
+    b.  The integer 1, because the expression is treated as number subtraction. String conversion does not take place, but a numeric conversion does.   
+    c.  The integer 3. Null is numerically converted to 0, so the result is 3.  
+    d.  The string '3null'. null takes a string conversion into 'null', and the strings are concatenated.  
+    e.  The integer 4. The boolean takes a numeric conversion and turns into the integer 1.  
+    f.  The integer 0. Both the boolean and the null are numerically convereted  
+    g.  The string 3undefined. The undefined value takes a string conversion into 'undefined'  
+    h.  NaN is returned (not a number). The '3' is numerically converted to integer 3, and attempts to subtract with undefined, which numerically converts to NaN. This doesn't work out, and NaN is returned    
+14. a. true. '2' is numerically converted to 2, and since 2 > 1, it returns true.  
+    b. false. Since we are comparing between two strings, an alphabetical comparison takes place, so '12' is technically less than '2' in an alphabetical sense.  
+    c. true. The '2' is numerically converted. Simple  2 == 2 conditional takes place, which returns true.  
+    d. false. Since we used === (strict equality), different typed operands are automatically treated inequal.  
+    e. false. true is numerically converted to 1, and since 1 != 2, false is returned.  
+    f. true. Using the boolean conversion, Boolean(), on any number besides 0, will convert it to true. Therefore true === true will return true.  
+15. the == is javascript's equality operator, while === is javascript's STRICT equality operator. the regular equality operator is lenient because it allows for type conversions, while the strict equality does not allow for type conversions.
+16. Answer in part2-question16.js
+17. We will be returned a new array with every element from the original parameter array doubled. When we iterate through the parameter array, we additionally use the parameter function, callback, which in this case is the doSomething() function, which doubles any number passed into it.
+18. Answer in part2-question18.js
+19. The console will print 1, then 1 second later print 2, then will instantly print 3 and 4. 
