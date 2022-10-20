@@ -1,0 +1,2 @@
+1. The passed in parameters are not of the integer type. They are strings, causing a string concatenation, not integer addition.   
+2. You would need to convert the strings num1 and num2 into integers, with parseInt()   
